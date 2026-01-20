@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       background-color: #f0f8ff;
       color: #333;
       scroll-behavior: smooth;
@@ -42,6 +42,13 @@
       cursor: pointer;
       font-size: 1em;
     }
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
     section {
       padding: 40px 20px;
       max-width: 900px;
@@ -49,6 +56,10 @@
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.8s ease;
+      border-bottom: 2px solid #1f6f54;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      padding-bottom: 30px;
     }
     section.visible {
       opacity: 1;
@@ -58,15 +69,15 @@
       color: #1f6f54;
       margin-top: 0;
     }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
     footer {
       background-color: #1f6f54;
       color: white;
       text-align: center;
       padding: 20px;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
     }
   </style>
 </head>
@@ -99,7 +110,6 @@
 
   <section id="causas">
     <h2>Causas principales</h2>
-    <p>Las principales causas son:</p>
     <ul>
       <li>Quema de combustibles fósiles como petróleo, carbón y gas natural.</li>
       <li>Deforestación masiva que reduce la capacidad de los bosques de absorber CO₂.</li>
